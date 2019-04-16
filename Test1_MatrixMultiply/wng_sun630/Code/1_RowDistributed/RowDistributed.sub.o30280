@@ -1,0 +1,15 @@
+numP = 1
+
+Elapsed time = 27.2757s
+numP = 2
+
+Elapsed time = 13.4578s
+numP = 4
+
+Elapsed time = 6.5548s
+numP = 8
+
+Elapsed time = 4.09674s
+numP = 16
+
+Elapsed time = 1.97949s

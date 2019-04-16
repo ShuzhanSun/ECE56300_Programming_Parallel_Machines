@@ -1,0 +1,4 @@
+gcc -fopenmp -std=c99 omp_hello.c -o omp_hello;
+
+./omp_hello;
+

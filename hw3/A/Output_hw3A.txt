@@ -1,0 +1,52 @@
+Output from the code: 
+
+A.1 
+Number of processors: 40 
+
+A.2 
+Unique thread ID of each thread: 
+Hello world from thread 23
+Hello world from thread 7
+Hello world from thread 29
+Hello world from thread 22
+Hello world from thread 16
+Hello world from thread 38
+Hello world from thread 17
+Hello world from thread 11
+Hello world from thread 18
+Hello world from thread 19
+Hello world from thread 35
+Hello world from thread 26
+Hello world from thread 15
+Hello world from thread 31
+Hello world from thread 4
+Hello world from thread 1
+Hello world from thread 5
+Hello world from thread 28
+Hello world from thread 8
+Hello world from thread 9
+Hello world from thread 27
+Hello world from thread 34
+Hello world from thread 32
+Hello world from thread 14
+Hello world from thread 10
+Hello world from thread 6
+Hello world from thread 12
+Hello world from thread 37
+Hello world from thread 2
+Hello world from thread 24
+Hello world from thread 20
+Hello world from thread 33
+Hello world from thread 25
+Hello world from thread 0
+Hello world from thread 3
+Hello world from thread 39
+Hello world from thread 13
+Hello world from thread 30
+Hello world from thread 36
+Hello world from thread 21
+
+A.3 
+Thread ID of master thread in the sequential region: 0
+Thread that executes master statement in the parallel region: 0
+Thread that executes single statement in the parallel region: 2

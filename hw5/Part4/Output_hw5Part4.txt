@@ -1,0 +1,9 @@
+The server I used has 40 threads, I set the number of elements in workQ n = 1,000,000.
+
+Parallel construct, omp_set_num_threads(40):
+execution time: 0.015744s
+
+Sequential construct, omp_set_num_threads(1):
+execution time: 0.004705s
+
+The sequential is faster because the scheduling and thread set-up take fairly good amount of time.

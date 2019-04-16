@@ -1,0 +1,4 @@
+icc -qopenmp -std=c++11 main_parallel.cpp -o omp
+
+
+qsub -l walltime=00:01:30 ./omp.sub

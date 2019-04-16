@@ -1,0 +1,11 @@
+In my code, the pulling work from the wA array did such a thing: for each wA[i], the execution in the thread will be suspended by wA[i]/1000 seconds
+
+For each case, to reduce the singularity from rand numbers, I run the code 3 times. The running time is:
+
+1) Number of sections T = 2:
+17.373813s;	17.372466s;	17.372141s
+
+2) sequential:
+22.789430s;	22.789853s;	22.792488s
+
+Comparison: the parallel with 2 sections used 2 threads, whereas the sequential version only used 1 thread. But the parallel only decreases the running time by a little bit, maybe because the section division parts take two long. 

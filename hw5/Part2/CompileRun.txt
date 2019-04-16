@@ -1,0 +1,4 @@
+g++ -fopenmp hw5Loop.cpp -o hw5Loop;
+
+./hw5Loop;
+

@@ -1,0 +1,23 @@
+Modification: Using nanosleep(t/1000) instead of sleep(t) to save the running time.
+Reason: #include <unistd.h> unsigned int sleep(unsigned int seconds) only suspends the execution for int number of seconds. But #include <time.h> int nanosleep(const struct timespec *rqtp, struct timespec *rmtp) could suspend the execution with nanosecond accuracy.
+
+omp_set_num_threads(2);
+
+For each schedule case, to reduce the singularity from rand numbers, I run the code 3 times and show the running time as below
+
+1) schedule (static):
+17.364957s;	17.366390s;	17.365411s
+
+2) schedule (static, 50):
+11.454626s;	11.452973s;	11.457514s
+
+3) schedule (dynamic):
+11.402735s;	11.399916s;	11.400685s
+
+4) schedule (dynamic, 50):
+11.440632s;	11.442292s;	11.442030s
+
+5) schedule (guided):
+11.396429s;	11.398970s;	11.401187s
+
+Conclusion: For this loop, the comparison among the speed of different scheduling strategies is (static)<(static, 50)<(dynamic, 50)<(dynamic)<(guided). Large blocks reduce scheduling costs, but lead to large load imbalance; Small blocks have a smaller load imbalance, but with higher scheduling costs. Usually, guided scheduling could balance and minimize both scheduling overhead and load imbalance, which is the reason why guided mode is the fastest in this loop.

@@ -1,0 +1,56 @@
+I use 16 processors for both MPI and OpenMP codes, and parallel them starting from level 4. 
+In the MPI code, each process initializes its subtree locally.
+
+1. For validation purpose, I first set the MAXLEVEL = 6, resulting 2^5-1 = 32 nodes in total. The results give the correct count.
+
+Output from the MPI code:
+0.798440
+0.335223
+0.783099
+0.477397
+0.513401
+0.553970
+0.394383
+0.141603
+0.242887
+0.717297
+0.400944
+0.998925
+0.156679
+0.635712
+0.840188
+0.839112
+0.840188
+0.700976
+0.561380
+0.916458
+0.274746
+0.135439
+0.486904
+0.352761
+0.206965
+0.565811
+0.926345
+0.785600
+0.632643
+0.999498
+0.354973
+Number of nodes whose value < 0.5 : 13
+elapsed time: 0.531738s
+
+
+2. Then, I set MAXLEVEL = 19 for the 2^18-1 nodes case. The results are
+
+Output from the MPI code:
+Number of nodes whose value < 0.5 : 131394
+elapsed time: 0.546895s
+
+(Using a different timing function "MPI_Wtime", and not considering the time for MPI_Init)
+Number of nodes whose value < 0.5 : 131394
+elapsed time: 0.0147631s
+
+Output from the OpenMP code:
+
+
+Analysis: 1) 2^18 = 262144, on average, there should be 2^17=131072 number smaller than 0.5. Both sequential and 
+parallel counts of numbers give similar amount of numbers. 2) the speed after parallelizing gets even slower.

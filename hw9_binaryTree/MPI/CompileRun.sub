@@ -1,0 +1,3 @@
+mpiicpc -std=c++11 hw9.cpp -o mpi
+
+qsub -l walltime=00:00:30 ./mpi.sub

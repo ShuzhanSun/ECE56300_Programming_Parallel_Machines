@@ -1,0 +1,13 @@
+Output from the code: 
+
+B.a 
+Sum of the array is 10000000 
+Time elpased is 0.029084 seconds 
+
+B.b 
+Sum of the array is 10000000 
+Time elpased is 0.535716 seconds 
+
+B.c 
+Sum of the array is 10000000 
+Time elpased is 0.078193 seconds 

@@ -1,0 +1,10 @@
+numP = 1, Matrix size N = 2000
+Elapsed time = 17.4985s
+numP = 2, Matrix size N = 2000
+Elapsed time = 9.16869s
+numP = 4, Matrix size N = 2000
+Elapsed time = 5.21004s
+numP = 8, Matrix size N = 2000
+Elapsed time = 2.90943s
+numP = 16, Matrix size N = 2000
+Elapsed time = 1.54816s

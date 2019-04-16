@@ -1,0 +1,16 @@
+N = 100000, numP = 16
+
+Test run 1: 
+Total summation = 100000, elapsed time = 9.41753e-05s
+Test run 2: 
+Total summation = 100000, elapsed time = 8.82149e-06s
+Test run 3: 
+Total summation = 100000, elapsed time = 7.86781e-06s
+Test run 4: 
+Total summation = 100000, elapsed time = 7.15256e-06s
+Test run 5: 
+Total summation = 100000, elapsed time = 7.15256e-06s
+Test run 6: 
+Total summation = 100000, elapsed time = 6.91414e-06s
+
+Average elapsed time over run 2 to run 6 (avoid large cache startup effect in first run) is 7.58171e-06s 

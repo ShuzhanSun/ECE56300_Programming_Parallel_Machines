@@ -1,0 +1,14 @@
+# FILENAME:  Cannon.sub
+#PBS -l walltime=00:03:00
+#PBS -q long
+
+cd $PBS_O_WORKDIR
+
+# Load the default module set to get the recommended MPI library.
+module load rcac
+
+mpiexec -n 1 ./Cannon.exe
+
+mpiexec -n 4 ./Cannon.exe
+
+mpiexec -n 16 ./Cannon.exe

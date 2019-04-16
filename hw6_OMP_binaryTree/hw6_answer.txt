@@ -1,0 +1,83 @@
+1. For validation purpose, I first set the MAXLEVEL = 5, resulting 2^4-1 = 15 nodes in total.
+
+Output from the sequential code:
+0.798440
+0.335223
+0.783099
+0.477397
+0.513401
+0.553970
+0.394383
+0.141603
+0.242887
+0.717297
+0.400944
+0.998925
+0.156679
+0.635712
+0.840188
+Number of nodes whose value < 0.5 : 7
+elapsed time: 0.000147s
+
+Output from the parallel code:
+0.156679
+0.277775
+0.783099
+0.553970
+0.108809
+0.197551
+0.635712
+0.952230
+0.137232
+0.998925
+0.606969
+0.218257
+0.804177
+0.400944
+0.512932
+Number of nodes whose value < 0.5 : 7
+elapsed time: 0.028637s
+
+As can be easily checked, both result are right! Also, the omp set-up and task generating take a lot of time!
+
+
+
+2. Then, I set MAXLEVEL = 19 for the 2^18 nodes case. I used if() clause to avoid generating too many tasks when the nodes in level i are already as many as the number of cores. The results are
+
+Output from the sequential code:
+Number of nodes whose value < 0.5 : 130648
+elapsed time: 1.59411s
+
+Output from the parallel code:
+Number of nodes whose value < 0.5 : 130983
+elapsed time: 2.83347s
+
+Analysis: 1) 2^18 = 262144, on average, there should be 2^17=131072 number smaller than 0.5. Both sequential and parallel counts of numbers give similar amount of numbers. 2) the speed after parallelizing gets even slower.
+
+
+
+3. Set MAXLEVEL = 23 for the 2^22 nodes case. 
+
+Sequential results
+Number of nodes whose value < 0.5 : 2097092
+elapsed time: 40.5959s
+
+Parallel results
+Number of nodes whose value < 0.5 : 2095376
+elapsed time: 44.5643s
+
+Still, the parallel code is slower.
+
+
+
+4. Set MAXLEVEL = 25 for the 2^24 nodes case. 
+
+Sequential results
+Number of nodes whose value < 0.5 : 8389911
+elapsed time: 134.271s
+
+Parallel results
+Number of nodes whose value < 0.5 : 8388539
+elapsed time: 198.185s
+
+Still, the parallel code is slower, even for a large amount of calculation. I think too many tasks are considered in this example and each task actually is only several lines of code. So, the parallelization here does not speed up the code. 

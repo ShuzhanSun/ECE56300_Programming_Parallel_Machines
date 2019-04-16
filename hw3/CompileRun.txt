@@ -1,0 +1,4 @@
+g++ -fopenmp hw3.cpp -o hw3;
+
+./hw3;
+

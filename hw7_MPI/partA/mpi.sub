@@ -1,0 +1,10 @@
+# FILENAME:  mpi.sub
+#PBS -l nodes=2:ppn=20,walltime=00:00:30
+#PBS -q long
+
+cd $PBS_O_WORKDIR
+
+# Load the default module set to get the recommended MPI library.
+module load rcac
+
+mpiexec -n 40 ./mpi

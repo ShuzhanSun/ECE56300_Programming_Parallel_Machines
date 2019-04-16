@@ -1,0 +1,3 @@
+mpiicpc hw8_v1.cpp -o mpi
+
+qsub -l walltime=00:00:30 ./mpi.sub

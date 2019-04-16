@@ -1,0 +1,5 @@
+Explanation: The difference is due to the limited machine precision of "float". When I set all the summation as "double", all four methods give the same summation of the sequence, which is 16.695311.
+
+Comparing the "float" accuracy result, the first sequential result, summing from 1 to 10,000,000, deviates the most from the exact value. That is because the summation quickly becomes large and requires more digit to store the summation value. Therefore, when other small terms are added, the accuracy of these small terms are very limited by the overrall precision. 
+
+The OpenMP reduction distributes the summation into many segmentations, and each small part of the summation could preserve a better accuracy, eventually, the accuracy is better.

@@ -1,0 +1,3 @@
+mpiicpc hw7_PartA.cpp -o mpi
+
+qsub -l nodes=2:ppn=20,walltime=00:00:20 ./mpi.sub

@@ -1,0 +1,4 @@
+g++ -fopenmp hw5Q.cpp -o hw5;
+
+./hw5;
+

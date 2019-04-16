@@ -1,0 +1,18 @@
+# FILENAME:  RowDistributed.sub
+#PBS -l walltime=00:03:00
+#PBS -q long
+
+cd $PBS_O_WORKDIR
+
+# Load the default module set to get the recommended MPI library.
+module load rcac
+
+mpiexec -n 1 ./RowDistributed.exe
+
+mpiexec -n 2 ./RowDistributed.exe
+
+mpiexec -n 4 ./RowDistributed.exe
+
+mpiexec -n 8 ./RowDistributed.exe
+
+mpiexec -n 16 ./RowDistributed.exe

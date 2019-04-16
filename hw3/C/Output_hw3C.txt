@@ -1,0 +1,13 @@
+Output from the code: 
+
+C.1 Sequential reduction from 1 to n_array
+Sum of the sequence: 15.403683 
+
+C.2 Sequential reduction from n_array to 1
+Sum of the sequence: 16.686031 
+
+C.3 OpenMP reduction from 1 to n_array
+Sum of the sequence: 16.694120 
+
+C.4 OpenMP reduction from n_array to 1
+Sum of the sequence: 16.695316 

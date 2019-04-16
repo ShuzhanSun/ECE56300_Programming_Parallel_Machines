@@ -1,0 +1,4 @@
+g++ -fopenmp hw5Section_sequential.cpp -o hw5;
+
+./hw5;
+

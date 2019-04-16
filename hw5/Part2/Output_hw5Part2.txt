@@ -1,0 +1,11 @@
+For each schedule case, to reduce the singularity from rand numbers, I run the code 3 times. The running time with guided scheduling is: (the server I used has 40 threads)
+
+1) omp_set_num_threads(2):
+11.396429s;	11.398970s;	11.401187s
+2) omp_set_num_threads(8):
+2.851067s;	2.851398s;	2.851713s
+3) omp_set_num_threads(32):
+0.720299s;	0.719220s;	0.719783s
+
+
+Conclusion: For this loop, under guided scheduling strategy, quadrupling the number of threads will quarter the running time because because each thread executes similar amount of commands. More threads will make the loop faster.

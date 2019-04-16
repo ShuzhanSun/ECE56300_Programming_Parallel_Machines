@@ -1,0 +1,4 @@
+g++ -fopenmp -std=c++0x main_parallel.cpp -o main;
+
+./main;
+

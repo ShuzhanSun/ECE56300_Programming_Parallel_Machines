@@ -1,0 +1,7 @@
+How to execute the code:
+
+Step 1: Compile the code with command: $ icpc -std=c++11 -mkl MKL.cpp -o MKL.exe
+
+Step 2: Submit the task with command: $ qsub -l walltime=00:00:30 ./MKL.sub
+
+One compiled .exe file and the outputs from the scholar are included.

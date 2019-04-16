@@ -1,0 +1,52 @@
+Output from the code: 
+
+Using critical 
+Initialized i = 0 
+Thread id = 4196256, current i value is: 1 
+Thread id = 4196256, current i value is: 2 
+Thread id = 4196256, current i value is: 3 
+Thread id = 4196256, current i value is: 4 
+Thread id = 4196256, current i value is: 5 
+Thread id = 4196256, current i value is: 6 
+Thread id = 4196256, current i value is: 7 
+Thread id = 4196256, current i value is: 8 
+Thread id = 4196256, current i value is: 9 
+Thread id = 4196256, current i value is: 10 
+Thread id = 4196256, current i value is: 11 
+Thread id = 4196256, current i value is: 12 
+Thread id = 4196256, current i value is: 13 
+Thread id = 4196256, current i value is: 14 
+Thread id = 4196256, current i value is: 15 
+Thread id = 4196256, current i value is: 16 
+Thread id = 4196256, current i value is: 17 
+Thread id = 4196256, current i value is: 18 
+Thread id = 4196256, current i value is: 19 
+Thread id = 4196256, current i value is: 20 
+Thread id = 4196256, current i value is: 21 
+Thread id = 4196256, current i value is: 22 
+Thread id = 4196256, current i value is: 23 
+Thread id = 4196256, current i value is: 24 
+Thread id = 4196256, current i value is: 25 
+Thread id = 4196256, current i value is: 26 
+Thread id = 4196256, current i value is: 27 
+Thread id = 4196256, current i value is: 28 
+Thread id = 4196256, current i value is: 29 
+Thread id = 4196256, current i value is: 30 
+Thread id = 4196256, current i value is: 31 
+Thread id = 4196256, current i value is: 32 
+Thread id = 4196256, current i value is: 33 
+Thread id = 4196256, current i value is: 34 
+Thread id = 4196256, current i value is: 35 
+Thread id = 4196256, current i value is: 36 
+Thread id = 4196256, current i value is: 37 
+Thread id = 4196256, current i value is: 38 
+Thread id = 4196256, current i value is: 39 
+Thread id = 4196256, current i value is: 40 
+
+Using master 
+Initialized i = 0 
+Thread id = 4196256, current i value is: 1 
+
+Using single 
+Initialized i = 0 
+Thread id = 4196256, current i value is: 1 

@@ -1,0 +1,7 @@
+How to execute the code:
+
+Step 1: Compile the code with command: $ mpiicpc -std=c++11 Cannon.cpp -o Cannon.exe;
+
+Step 2: Submit the task with command: $ qsub -l walltime=00:03:00 ./Cannon.sub
+
+One compiled .exe file and the outputs from the scholar are included.
